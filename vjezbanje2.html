@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en" data-ng-app ="moj_modul">
+
+  <head>
+      <meta charset="UTF-8"/>
+      <title></title>
+      <link rel="stylesheet" href="vjezbanje2.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"> </script>
+     <!-- <script src="../ANGULAR_JS/angular_js biblioteka/verzija 1.8.2/nekompresovani/nekompresovani.js"></script> --> 
+   
+      <script src="vjezbanje2.js"></script>
+
+     
+
+
+  </head>
+
+
+
+
+
+
+  <body data-ng-controller="glavni">
+
+    <div id="wrapp">
+        <table style="width: 100%; background-color: aqua; height: 700px;" >
+
+            <thead>
+                <tr>
+                    <th>Ime filma</th>
+                    <th>Vrsta filma</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr data-ng-repeat ="movie in filmovi">
+                    <td>{{movie.ime}}</td>
+
+                    <td data-ng-class="movie.vrsta">{{movie.vrsta}}</td>
+                </tr>
+            </tbody>
+
+
+
+
+
+
+        </table>
+    
+    </div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+</html>
